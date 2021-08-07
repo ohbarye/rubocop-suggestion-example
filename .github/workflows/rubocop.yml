@@ -1,0 +1,21 @@
+name: rucobop
+
+on: [pull_request]
+
+jobs:
+  rubocop:
+    name: rubocop
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v1
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0.2
+      - name: rubocop
+        uses: ohbarye/action-rubocop@rubocop-with-suggestion
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          fail_on_error: true
+

@@ -1,8 +1,9 @@
-  class MyClass         < Object
-    def initialize
-      super
-    end
+# frozen_string_literal: true
 
-
-    def   to_s; end
+class MyClass < Object
+  def no_calc(a, b)
+    c = a + b
+    a
   end
+end
+

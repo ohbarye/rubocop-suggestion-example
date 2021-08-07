@@ -1,8 +1,8 @@
-class MyClass         < Object
-  def initialize
-    super
+  class MyClass         < Object
+    def initialize
+      super
+    end
+
+
+    def   to_s; end
   end
-
-
-  def   to_s; end
-end

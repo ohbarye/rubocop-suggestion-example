@@ -3,5 +3,6 @@ class MyClass         < Object
     super
   end
 
+
   def   to_s; end
 end

@@ -13,9 +13,8 @@ jobs:
         with:
           ruby-version: 3.0.2
       - name: rubocop
-        uses: ohbarye/action-rubocop@rubocop-with-suggestion
+        uses: ohbarye/action-rubocop@master
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           fail_on_error: true
-

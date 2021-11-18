@@ -13,7 +13,7 @@ jobs:
         with:
           ruby-version: 3.0.2
       - name: rubocop
-        uses: reviewdog/action-rubocop@v1
+        uses: ohbarye/action-rubocop@skip-global-offense
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
